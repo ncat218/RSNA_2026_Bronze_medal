@@ -1,0 +1,23 @@
+{
+  "notebook_sha256": "f92f76b16aa4411d743cf54712201c6d92021f821e75313dbcabe97ed27894b7",
+  "original_s6_worker_sha256": "34f433fe72b732543813165c3397ec80cef01b0d49b25b7b22668714f0b0ef4a",
+  "patched_s6_worker_sha256": "a3702b783e1e44a066387c327b007eae1646d03a621a70d43a431c1e7cdb0fc8",
+  "crop_offsets": [
+    [
+      16,
+      16
+    ],
+    [
+      24,
+      24
+    ]
+  ],
+  "training_crop_offset_range": [
+    0,
+    32
+  ],
+  "training_recipe_claim": "Verified random crop implementation; no flips",
+  "gold_evaluation_performed": false,
+  "gpu_verified": false,
+  "known_risk": "40A hidden rerun exception unresolved; this inherits39 infrastructure."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "VERIFIED_COMPLETE",
+  "archive_sha256": "219d469a0a24856739df6602abde4e0396edda3b5077d908ea5f45a73a153138",
+  "gold_scored": 58,
+  "visible_scored": 3,
+  "raptor_fallbacks": 0,
+  "total_seconds": 565.61,
+  "gold_inference_seconds": 352.2,
+  "macro_auc_descriptive_only": {
+    "r6": 0.9365791011047819,
+    "raptor384": 0.9229427460977101,
+    "proxy29B": 0.9382739469880876,
+    "s6": 0.9313757829108326,
+    "proxy29B_90_s6_10": 0.9395050005882336
+  },
+  "fixed_blend_delta": 0.0012310536001459704,
+  "target_change_counts": {
+    "improved": 8,
+    "worsened": 3,
+    "unchanged": 1
+  },
+  "paired_macro_auc_delta_ci95": {
+    "s6_minus_r6": {
+      "valid_resamples": 1000,
+      "ci95": [
+        -0.02056429857183464,
+        0.009840757892274564
+      ]
+    },
+    "s6_minus_raptor384": {
+      "valid_resamples": 1000,
+      "ci95": [
+        -0.008007840458380282,
+        0.02389802614900784
+      ]
+    },
+    "fixed_proxy_blend_minus_proxy29B": {
+      "valid_resamples": 1000,
+      "ci95": [
+        -0.0009332976247527353,
+        0.003619410423199435
+      ]
+    }
+  },
+  "limitations": [
+    "Gold is small and reused upstream and in project diagnostics; confidence intervals do not remove selection bias.",
+    "Signed probability-error correlation is descriptive and partly reflects calibration and shared truth.",
+    "No exact notebook33 gold comparison: Raptor224 gold predictions are unavailable.",
+    "Visible S6 execution is not parity against published values; no pinned reference provided.",
+    "No hidden-test runtime or Private score guarantee. No blend weight selected from these metrics."
+  ],
+  "decision": "Worth one preregistered 10% S6 + 90% exact33 Public probe; not proof of a gain. Do not optimize weights on gold.",
+  "new_submission_notebook_created": false
+}

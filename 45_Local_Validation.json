@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "tests": [
+    "independent five-formula oracle, sizes1/2/3/1513, ties/endpoints/reorderedIDs and own-population ranks",
+    "invalid UID/nonfinite/out-of-range/mask/receipt/source/weight/sentinel/baseline/reconstruction rejection",
+    "all five source hashes/compilation, exact S6 literals, exact original anchor prefix, coverage-only suffix, metadata and protected33",
+    "complete clean-parent execution for every45A-E: success/constant/1513-row partial coverage/model failure/late deadline error",
+    "diagnostic NaN becomes JSON null, final CSV stays finite, both audits agree, late/stage failures clear partial submission"
+  ],
+  "formula_tags": [
+    "45A",
+    "45B",
+    "45C",
+    "45D",
+    "45E"
+  ],
+  "largest_fixture_rows": 1513,
+  "full_parent_fixture_cases": 25,
+  "notebook_sha256": {
+    "45A": "1073a5c172f12c3a9a43dda1fefc9a53692271009a35f58df31e785966c88bf1",
+    "45B": "2f432261ec6f3a4fff9a842835bd71168a952302192e85a87363fa17a54eebdd",
+    "45C": "89e1409d6b91181afad4608878c445389ffaa42a8bc41a5cb6a542a31591dfbd",
+    "45D": "8525a510df88ffe5393e190d58a418e2d2e77a3e516e4e687b784c3a32d77da3",
+    "45E": "4cdda2c9a1a012282c4003772bb326a7bc8eec9f5d28100dfa5ac5879f1d567e"
+  },
+  "model_and_mount_stages_mocked": true,
+  "gpu_execution_tested": false,
+  "dicom_decoding_tested": false,
+  "hidden_submission_tested": false,
+  "accuracy_or_generalization_tested": false
+}

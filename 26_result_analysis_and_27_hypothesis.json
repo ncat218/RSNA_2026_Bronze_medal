@@ -1,0 +1,106 @@
+{
+  "source_zip": "results 26.zip",
+  "source_sha256": "c52f6712c7a20991c177fe4087267f8e46487856e3555437e95948a9df1cae68",
+  "gold_is_independent_validation": false,
+  "probe_origin": "One 65% R7 / 35% Raptor OA-group hypothesis, motivated after inspecting diagnostic 26; no weight search.",
+  "base_macro_auc": 0.9354010743909692,
+  "candidate_macro_auc": 0.937200158636862,
+  "score_format": "float32, matching the actual 25A/27 submission path and its ties",
+  "diagnostic_26_float64_baseline_auc": 0.9355084381495721,
+  "delta_macro_auc": 0.0017990842458928125,
+  "per_target": [
+    {
+      "target": "ACL",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.9877450980392157,
+      "candidate_auc": 0.9877450980392157,
+      "delta": 0.0
+    },
+    {
+      "target": "MCL",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.9569160997732427,
+      "candidate_auc": 0.9569160997732427,
+      "delta": 0.0
+    },
+    {
+      "target": "Medial Meniscus",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.9771634615384616,
+      "candidate_auc": 0.9771634615384616,
+      "delta": 0.0
+    },
+    {
+      "target": "Lateral Meniscus",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.9267080745341615,
+      "candidate_auc": 0.9267080745341615,
+      "delta": 0.0
+    },
+    {
+      "target": "Medial OA",
+      "r7_weight": 0.65,
+      "baseline_auc": 0.9922480620155039,
+      "candidate_auc": 0.9922480620155039,
+      "delta": 0.0
+    },
+    {
+      "target": "Lateral OA",
+      "r7_weight": 0.65,
+      "baseline_auc": 0.8346228239845261,
+      "candidate_auc": 0.851063829787234,
+      "delta": 0.01644100580270791
+    },
+    {
+      "target": "PF OA",
+      "r7_weight": 0.65,
+      "baseline_auc": 0.8893178893178894,
+      "candidate_auc": 0.8944658944658944,
+      "delta": 0.005148005148005064
+    },
+    {
+      "target": "Effusion",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.968944099378882,
+      "candidate_auc": 0.968944099378882,
+      "delta": 0.0
+    },
+    {
+      "target": "Synovitis",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.8327359617682198,
+      "candidate_auc": 0.8327359617682198,
+      "delta": 0.0
+    },
+    {
+      "target": "Baker's",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.967391304347826,
+      "candidate_auc": 0.967391304347826,
+      "delta": 0.0
+    },
+    {
+      "target": "Contusion",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.9507422402159245,
+      "candidate_auc": 0.9507422402159245,
+      "delta": 0.0
+    },
+    {
+      "target": "Fracture",
+      "r7_weight": 0.5,
+      "baseline_auc": 0.9402777777777778,
+      "candidate_auc": 0.9402777777777778,
+      "delta": 0.0
+    }
+  ],
+  "leave_one_study_out_fixed_scores": {
+    "min_delta": 0.0011501369657398082,
+    "max_delta": 0.0020461951313015168,
+    "positive_delta_count": 58,
+    "total": 58
+  },
+  "runtime_26_seconds": 984.84,
+  "window_policy_decision": "Retain original 25A windows; both filtering diagnostics decreased blend AUC.",
+  "interpretation": "Gold is reused development data. These numbers motivate a prospective hidden-test probe and do not estimate a Private gain."
+}

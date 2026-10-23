@@ -1,0 +1,17 @@
+{
+  "source": "Kaggle public/0.958.ipynb",
+  "source_sha256": "69b7bb257e14757dabdc20debcf208d45350153d079e66123f6a9bfd54bcf5b7",
+  "output": "31_RSNA_0958_Rebuild_Strict.ipynb",
+  "output_sha256": "67818b360a753eca85103f6f23aa4bf4c7cf9feebe4571509686da314602ed9d",
+  "scoring_formula": "v6a unchanged",
+  "new_gates": [
+    "gpu_metadata",
+    "early_manifest_preflight",
+    "four_coat_readers",
+    "four_coat_probability_artifacts",
+    "flat3_sources",
+    "raptor_preparation",
+    "final_blend_contract"
+  ],
+  "gpu_inference_executed_locally": false
+}

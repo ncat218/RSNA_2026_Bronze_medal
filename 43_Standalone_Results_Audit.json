@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-21",
+  "status": "VERIFIED_COMPLETE",
+  "public_scores_user_screenshot": {
+    "43A": 0.95,
+    "43B": 0.95
+  },
+  "public_full_precision_available": false,
+  "runs": {
+    "43A": {
+      "archive_sha256": "c6e50ffc9e71eb60c054040c960d508a6534578da031bb277cb51166fd9f4d78",
+      "saved_visible_rows": 3,
+      "total_seconds": 200.84,
+      "s6_stage_seconds": 196.02,
+      "inference_group_seconds": 100.0,
+      "summed_worker_gpu_seconds": 32.4,
+      "window_counts": {
+        "1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191": 574,
+        "1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402": 502,
+        "1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776": 510
+      },
+      "scored": 3,
+      "model_fallbacks": 0,
+      "source_identity_verified": true,
+      "csv_reproduced_from_probabilities": true,
+      "expected_crop_recipe_verified": true,
+      "visible_vs38_max_abs_probability_delta": 1.1102230246251565e-16,
+      "anatomy_methods": {
+        "skm_tea_joint": 1,
+        "slab_prior": 1,
+        "skm_tea_joint_avg2": 1
+      }
+    },
+    "43B": {
+      "archive_sha256": "c7c33e8fe5ea15199f826f6cb2be0a3f9494031206f735180d04a2e7bb3e8879",
+      "saved_visible_rows": 3,
+      "total_seconds": 198.47,
+      "s6_stage_seconds": 194.02,
+      "inference_group_seconds": 102.0,
+      "summed_worker_gpu_seconds": 37.2,
+      "window_counts": {
+        "1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191": 574,
+        "1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402": 502,
+        "1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776": 510
+      },
+      "scored": 3,
+      "model_fallbacks": 0,
+      "source_identity_verified": true,
+      "csv_reproduced_from_probabilities": true,
+      "expected_crop_recipe_verified": true,
+      "visible_vs38_max_abs_probability_delta": 0.05645257888240085,
+      "anatomy_methods": {
+        "skm_tea_joint": 1,
+        "slab_prior": 1,
+        "skm_tea_joint_avg2": 1
+      }
+    }
+  },
+  "comparison": {
+    "visible_probability_changed_cells": 36,
+    "visible_probability_cells": 36,
+    "visible_max_abs_probability_delta": 0.05645257888240085,
+    "visible_mean_abs_probability_delta": 0.008549677267624725,
+    "visible_rank_changed_cells": 0,
+    "visible_submission_byte_identical": true,
+    "visible_submission_sha256": "b9e77f775ae1f54b6bcc089f693314781f58bd255f84f615e7cb1133d582f6d8",
+    "same_window_counts": true
+  },
+  "interpretation": [
+    "Both recipes genuinely ran with identical checkpoint and window counts; this is not an accidental duplicate baseline.",
+    "Crop TTA changes visible probabilities but does not change ordering on any of the twelve targets across the three visible studies.",
+    "Identical saved three-row rank CSVs do NOT imply identical hidden Public predictions.",
+    "Both Public scores round to0.950; no demonstrated benefit at displayed precision, not proof of exact equality.",
+    "The saved timings are startup/decode dominated three-study observations, not hidden runtime measurements.",
+    "No test labels or per-study hidden predictions are in the ZIPs; no hidden error analysis or Private generalization claim is possible.",
+    "Stop further crop-offset probing. Keep successful0.958 ensembles as final candidates; do not promote standalone0.950 from recency."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "reference_file": "C:\\Users\\ADMIN\\Documents\\RSNA\\Kaggle public\\0-9576-latest-public-dataset-score-in-one-click.ipynb",
+  "reference_sha256": "449ce7786021dc17fa671783d86d6f5ae4e10638f013c93085eadaba847cbd02",
+  "reference_scoring_hashes": {
+    "2": "3858126b82681ba469934c84a79f360eb199df59c16159b7a168df94e415cb37",
+    "3": "d08db7bd194a78dac8c923a50048d098dd297223cc971e0fec40ba996d840e78",
+    "4": "0b0545b46407a46d5a4ebd6a1a941b24103e62844feffda96d6fc37a48cff090",
+    "5": "10e20e388df7fed2aaecc900cfdebb294735eea8965924748d31d4db28d6d823",
+    "6": "d999af7afca4f9f5133e22b5e3c97cd5a2f8a8aa33108c73c232f1ff0dffa06a",
+    "7": "68f70dd31cc3544cb5734313d06538355a34b122ff430a32820756175c9c9dd9",
+    "8": "d0fbbf1c24806ee136d33df0e463de8763eea846f0be77b3a4ed98366a0d4e79"
+  },
+  "probes": [
+    {
+      "file": "29A_R6_TTA_Raptor384_224_Reproduction.ipynb",
+      "flip": true,
+      "use224": true,
+      "all_code_compile": true,
+      "source_cells_checked": true
+    },
+    {
+      "file": "29B_R6_TTA_Raptor384_No224.ipynb",
+      "flip": true,
+      "use224": false,
+      "all_code_compile": true,
+      "source_cells_checked": true
+    },
+    {
+      "file": "29C_R6_Plain_Raptor384_224_NoTTA.ipynb",
+      "flip": false,
+      "use224": true,
+      "all_code_compile": true,
+      "source_cells_checked": true
+    }
+  ]
+}

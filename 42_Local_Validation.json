@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "notebook_sha256": "af19ee76b796122709d3ed64a543327f018d1f7b4a39f86a54246df53d71c983",
+  "tests": [
+    "all sources compile",
+    "all anchor33 code bodies preserved except final export destination",
+    "rank fusion with ties and reordered IDs",
+    "missing/duplicate UID rejection",
+    "failed S6 row preserves anchor only",
+    "full parent clean-namespace success with fixture stages",
+    "full parent injected stage failure removes partial submission and writes FAILED audit",
+    "real PyTorch CPU score: exact offset8/24 crop geometry and study-logit averaging",
+    "repeated centre crop exactly reproduces original CPU scoring with toy model",
+    "verify original source before patch; reject changed original source"
+  ],
+  "gpu_execution_tested": false,
+  "hidden_submission_tested": false,
+  "real_model_gpu_inference_tested": false
+}

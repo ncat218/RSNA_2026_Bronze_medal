@@ -1,0 +1,14 @@
+{
+  "notebook_sha256": "e5a119b545ecf1401cd3fe9a9c5fd65349670f4e5f506ab101235acc56422590",
+  "public_source_sha256": "6e87350d5ae092b7a889546ca13517303523bc469f7e611ffe945913434d22fe",
+  "component_sha256": "daf38743441a026e9c558fe48fbc41262b38635efff7557ea1c9ad431b2c6397",
+  "source_dataset_version": 5,
+  "source_notebook_version": 2,
+  "embedded_reference_zip_sha256": {
+    "results 26.zip": "c52f6712c7a20991c177fe4087267f8e46487856e3555437e95948a9df1cae68",
+    "results 30.zip": "b01a8aaae8320138698d7dcede22f5d086a10f11d03548921606c9adb8ee1fdc"
+  },
+  "gpu_execution_verified": false,
+  "training_started": false,
+  "submission_notebook": false
+}

@@ -1,0 +1,19 @@
+{
+  "source": "31_RSNA_0958_Rebuild_Strict.ipynb",
+  "source_sha256": "89afbd46977d4676a1c5f3344b930b7fe06e4032f3ac326034bb9777c4cda244",
+  "output": "33_RSNA_0958_R6_Raptor_Submit.ipynb",
+  "output_sha256": "685e6e0e65c3c5ed29b11c0b584887d894cd07f274de0b9f83370465ab7b4fde",
+  "code_sha256": [
+    "3858126b82681ba469934c84a79f360eb199df59c16159b7a168df94e415cb37",
+    "d08db7bd194a78dac8c923a50048d098dd297223cc971e0fec40ba996d840e78",
+    "0b0545b46407a46d5a4ebd6a1a941b24103e62844feffda96d6fc37a48cff090",
+    "10e20e388df7fed2aaecc900cfdebb294735eea8965924748d31d4db28d6d823",
+    "4a192853d770eb17aa95721f36b986aa7bb5e7d3fb8d2f43bca28b3c4d530e32",
+    "68f70dd31cc3544cb5734313d06538355a34b122ff430a32820756175c9c9dd9",
+    "7a37c213396bf9ff054dc8d34281bc5501b1de4914df9a97d9d74043d401e5d8"
+  ],
+  "scoring_code_changed": false,
+  "gpu_metadata_enabled": true,
+  "user_reported_public_score": 0.958,
+  "hidden_submission_verified": false
+}

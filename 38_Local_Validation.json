@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "notebook_sha256": "e5a119b545ecf1401cd3fe9a9c5fd65349670f4e5f506ab101235acc56422590",
+  "tests": [
+    "all cells compile",
+    "reviewed controller imports without original main/A runner",
+    "real mount resolver handles renamed nested datasets and records missing anatomy",
+    "clean-parent full setup/preflight/runner/analysis with mocked environment and inference",
+    "paired bootstrap and CSV output schema",
+    "injected worker failure propagates and records FAILED_INFERENCE",
+    "exact anchor33 hash unchanged"
+  ],
+  "gpu_or_mri_inference_tested": false,
+  "test_predictions": "synthetic/previous reference, not new S6 results"
+}

@@ -1,0 +1,143 @@
+{
+  "experiment": "29_output_audit",
+  "date": "2026-10-16",
+  "public_scores_user_reported": {
+    "29A": 0.957,
+    "29B": 0.957
+  },
+  "zip_sha256": {
+    "A": "0db2b0b65ce53142aa4db97c65f9c76546cdf1c36e5d7ed09fba0ede62aa781c",
+    "B": "fd9fded188e22a3180d803c50c6a0ef2a9d0ec894f7fb0c9d0724412ad8625f9"
+  },
+  "audits": {
+    "A": {
+      "experiment": "29A",
+      "status": "COMPLETE",
+      "rows_visible_to_this_run": 3,
+      "model_bundle": "fe055406fad6a12f",
+      "expected_flip_tta": true,
+      "workers_flip_tta": [
+        true,
+        true
+      ],
+      "uses_raptor224": true,
+      "weights": {
+        "raptor": 0.5,
+        "ours": 0.5,
+        "raptor_per_class": {
+          "Medial OA": 0.5,
+          "Lateral OA": 0.5,
+          "PF OA": 0.5
+        },
+        "a224": 0.35
+      },
+      "failures": {
+        "raptor384_failed": 0,
+        "raptor224_failed": 0,
+        "raptor_failed": 0,
+        "ours_failed": 0,
+        "both_failed": 0
+      },
+      "total_seconds": 432.1,
+      "submission_sha256": "1ebfe53cb93ba0b9705724721755b515e64f7703712bc6a1bdddbcd181a7342b",
+      "note": "Saved visible rows and runtime do not establish hidden-test performance."
+    },
+    "B": {
+      "experiment": "29B",
+      "status": "COMPLETE",
+      "rows_visible_to_this_run": 3,
+      "model_bundle": "fe055406fad6a12f",
+      "expected_flip_tta": true,
+      "workers_flip_tta": [
+        true,
+        true
+      ],
+      "uses_raptor224": false,
+      "weights": {
+        "raptor": 0.5,
+        "ours": 0.5,
+        "raptor_per_class": {
+          "Medial OA": 0.5,
+          "Lateral OA": 0.5,
+          "PF OA": 0.5
+        },
+        "a224": 0.0
+      },
+      "failures": {
+        "raptor384_failed": 0,
+        "raptor224_failed": 0,
+        "raptor_failed": 0,
+        "ours_failed": 0,
+        "both_failed": 0
+      },
+      "total_seconds": 455.8,
+      "submission_sha256": "47e4884f75a9bbfd726689f0be91bc6b5264ef3de6d6bcbbfdaa2adcea3fbcaa",
+      "note": "Saved visible rows and runtime do not establish hidden-test performance."
+    }
+  },
+  "visible_rows_only": 3,
+  "per_target_difference": [
+    {
+      "target": "ACL",
+      "changed_cells": 2,
+      "max_abs_delta": 0.05833334000000001
+    },
+    {
+      "target": "MCL",
+      "changed_cells": 2,
+      "max_abs_delta": 0.05833334000000001
+    },
+    {
+      "target": "Medial Meniscus",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "Lateral Meniscus",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "Medial OA",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "Lateral OA",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "PF OA",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "Effusion",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "Synovitis",
+      "changed_cells": 2,
+      "max_abs_delta": 0.05833334999999995
+    },
+    {
+      "target": "Baker's",
+      "changed_cells": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "target": "Contusion",
+      "changed_cells": 2,
+      "max_abs_delta": 0.05833334999999995
+    },
+    {
+      "target": "Fracture",
+      "changed_cells": 2,
+      "max_abs_delta": 0.05833334999999995
+    }
+  ],
+  "r6_predictions_byte_identical": true,
+  "interpretation": "No test labels in these ZIPs. Three visible studies cannot explain hidden Public errors, establish Private gains, or select target weights."
+}

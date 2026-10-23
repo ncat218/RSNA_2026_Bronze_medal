@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "notebook_sha256": "2dfdcffaf532c7317f45ba095705e24c35f83ad014d3e0032c5686405509e543",
+  "tests": [
+    "all sources compile",
+    "all anchor33 code bodies preserved except final export destination",
+    "probability fusion with reordered IDs",
+    "missing/duplicate UID rejection",
+    "failed S6 row preserves anchor only",
+    "full parent clean-namespace success with fixture stages",
+    "full parent injected stage failure removes partial submission and writes FAILED audit"
+  ],
+  "gpu_execution_tested": false,
+  "hidden_submission_tested": false
+}

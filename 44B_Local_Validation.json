@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "notebook_sha256": "3fc1b9cac01e30244b605db01db4c6925ad662c0ed862a864a3808e422682903",
+  "tests": [
+    "all sources compile",
+    "all anchor33 code bodies preserved except final export destination",
+    "40B probability fusion with reordered IDs",
+    "missing/duplicate UID rejection",
+    "failed S6 row preserves anchor only",
+    "full parent clean-namespace success with fixture stages",
+    "full parent injected stage failure removes partial submission and writes FAILED audit",
+    "only injected worker-argument filter differs from original40B anchor adapter",
+    "S6 stage/component source byte-identical to40B",
+    "exactly one optional flag+path removed; other stacker and mirror retained",
+    "missing/duplicate option rejected"
+  ],
+  "gpu_execution_tested": false,
+  "hidden_submission_tested": false,
+  "gpu_or_actual_stacker_inference_tested": false
+}

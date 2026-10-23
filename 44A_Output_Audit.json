@@ -1,0 +1,33 @@
+{
+  "status": "AUDITED",
+  "visible_rows": 3,
+  "run_status": "COMPLETE",
+  "archive_sha256": "c8f018823e9f80f3d87f85abb9ecefae66dd8d9c4d6ec0851bb6bafd8315a1b6",
+  "elapsed_seconds": 628.24,
+  "disabled": "--fluid-stacker",
+  "worker_argument_removal_verified": true,
+  "warnings": [],
+  "changed_final_columns": [
+    "Effusion"
+  ],
+  "max_abs_final_delta_vs40B": 0.15000006,
+  "ordering_changes_vs40B": {
+    "ACL": 0,
+    "MCL": 0,
+    "Medial Meniscus": 0,
+    "Lateral Meniscus": 0,
+    "Medial OA": 0,
+    "Lateral OA": 0,
+    "PF OA": 0,
+    "Effusion": 1,
+    "Synovitis": 0,
+    "Baker's": 0,
+    "Contusion": 0,
+    "Fracture": 0
+  },
+  "s6_max_abs_delta_vs40B": 0.0,
+  "public_score_user_reported": 0.958,
+  "hidden_predictions_available": false,
+  "independent_validation": false,
+  "auc_computed": false
+}

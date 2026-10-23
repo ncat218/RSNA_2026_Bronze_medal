@@ -1,0 +1,28 @@
+{
+  "43A": {
+    "status": "PASS",
+    "notebook_sha256": "ac17ea865a7d1bf3d5c0a4d9cf08b6c2ed91c28f94b1e363a0c5fddbca36c789",
+    "tests": [
+      "all sources compile",
+      "3 input metadata; no anchor code",
+      "rank export with ties/reordered IDs",
+      "1500-row synthetic order preservation",
+      "full parent success with mocked inference",
+      "worker/missing-UID/NaN/fallback failures remove final CSV and record FAILED"
+    ],
+    "gpu_or_hidden_inference_tested": false
+  },
+  "43B": {
+    "status": "PASS",
+    "notebook_sha256": "67519baaea775573af31bbb0ba923d538039ba9d29f2d29d34d899c8af86cf0c",
+    "tests": [
+      "all sources compile",
+      "3 input metadata; no anchor code",
+      "rank export with ties/reordered IDs",
+      "1500-row synthetic order preservation",
+      "full parent success with mocked inference",
+      "worker/missing-UID/NaN/fallback failures remove final CSV and record FAILED"
+    ],
+    "gpu_or_hidden_inference_tested": false
+  }
+}

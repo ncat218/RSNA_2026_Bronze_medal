@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-22T14:36:24.520647+00:00",
+  "base40B_sha256": "2dfdcffaf532c7317f45ba095705e24c35f83ad014d3e0032c5686405509e543",
+  "original_anchor_script_sha256": "0993187ed79de621f21407272b63e6f2b7491baec968709e9b7ac30db55f3969",
+  "adapter_sha256": "c37b319280ce5ffd8198d6aa99fdebf10e14f891d99a5f7cb9baf286eda12e70",
+  "fusion_helper_sha256": "1de4030bf93c0be4548ee45a84f3de7bb5125cde1ea75777e9708fb389e25418",
+  "predeclared_before_new_scores": true,
+  "training": false,
+  "additional_model_forwards_per_run": 0,
+  "each_notebook_reexecutes_full40B_models": true,
+  "s6_component_sha256": "daf38743441a026e9c558fe48fbc41262b38635efff7557ea1c9ad431b2c6397",
+  "s6_script_sha256": "799d9444177286e15b8e8572626d7cca6f4280d03c60b34fafcca89f9cb9c42e",
+  "gpu_or_hidden_execution_verified": false,
+  "experiments": {
+    "45A": {
+      "file": "45A_AnchorPercentile_Submit.ipynb",
+      "priority": 1,
+      "formula": ".90 * rank(anchor33) + .10 * probability(S6)",
+      "hypothesis": "Normalize the compressed anchor rank blend before adding S6 confidence",
+      "sha256": "1073a5c172f12c3a9a43dda1fefc9a53692271009a35f58df31e785966c88bf1"
+    },
+    "45B": {
+      "file": "45B_ProbabilityPool_Submit.ipynb",
+      "priority": 3,
+      "formula": ".90 * [w_j*(.65*p384+.35*p224)+(1-w_j)*p6] + .10*pS6",
+      "hypothesis": "Test whether component confidence adds information discarded by ranks",
+      "sha256": "2f432261ec6f3a4fff9a842835bd71168a952302192e85a87363fa17a54eebdd"
+    },
+    "45C": {
+      "file": "45C_LogitPool_Submit.ipynb",
+      "priority": 4,
+      "formula": "sigmoid(.90*[w_j*(.65*logit(p384)+.35*logit(p224))+(1-w_j)*logit(p6)]+.10*logit(pS6)); epsilon=1e-5",
+      "hypothesis": "Test fixed geometric-odds pooling; calibration mismatch is a material risk",
+      "sha256": "89e1409d6b91181afad4608878c445389ffaa42a8bc41a5cb6a542a31591dfbd"
+    },
+    "45D": {
+      "file": "45D_UniformFamily_Submit.ipynb",
+      "priority": 2,
+      "formula": ".90 * [.50*(.65*rank(p384)+.35*rank(p224))+.50*rank(p6)] + .10*pS6",
+      "hypothesis": "Remove per-finding overrides to test less class-specific adaptation",
+      "sha256": "8525a510df88ffe5393e190d58a418e2d2e77a3e516e4e687b784c3a32d77da3"
+    },
+    "45E": {
+      "file": "45E_NoRaptor224_Submit.ipynb",
+      "priority": 5,
+      "formula": ".90 * [w_j*rank(p384)+(1-w_j)*rank(p6)] + .10*pS6",
+      "hypothesis": "Test whether the lower-resolution Raptor component dilutes the current ensemble",
+      "sha256": "4cdda2c9a1a012282c4003772bb326a7bc8eec9f5d28100dfa5ac5879f1d567e"
+    }
+  }
+}

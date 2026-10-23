@@ -1,0 +1,32 @@
+{
+  "anchor": "33_RSNA_0958_R6_Raptor_Submit.ipynb",
+  "anchor_sha256": "685e6e0e65c3c5ed29b11c0b584887d894cd07f274de0b9f83370465ab7b4fde",
+  "score_user_reported": 0.958,
+  "gpu_tested_locally": false,
+  "submissions": [
+    {
+      "file": "35_R6_Phase_Ensemble_Submit.ipynb",
+      "hypothesis": "Same anatomical neighbour spacing, two physical sampling phases. Average each fully postprocessed R6 probability vector equally. No stride reduction: baseline already uses eval_stride=1. Thin-stack slab averaging means many studies may be unchanged. Extra R6 pass can increase hidden runtime; this is unmeasured.",
+      "sha256": "6bafba6ddb409bc891a57af63f3a0a145c0613da5b42264c0fee453df57514e4",
+      "code_compile": true,
+      "same_33_blend_weights": true,
+      "known_score": null
+    },
+    {
+      "file": "36_Raptor_Series_Density_MIL_Submit.ipynb",
+      "hypothesis": "Anatomical sequence coverage: Raptor has unequal window counts across its five MRI slots. Subtract log(slot-window-count) from attention logits, then average the original and adjusted probabilities equally. All windows, pixels, crop and mirror stay unchanged. Hypothesis: reduce sampling-count dominance; learned attention may already compensate, so this can harm. This is NOT a trained hierarchical model and NOT a clinical rule. No extra backbone pass.",
+      "sha256": "d4cf758e85c69db2710ca96d0880cbc21ec1714b95fb91a125fbfa42a046a2ed",
+      "code_compile": true,
+      "same_33_blend_weights": true,
+      "known_score": null
+    },
+    {
+      "file": "37_R6_SameSize_ShiftedCrop_Submit.ipynb",
+      "hypothesis": "Same 352px crop, mildly translated: native384 offset24 on both axes versus original centred offset16. No resizing, larger FOV or reduced resolution. Average complete original/shifted R6 probabilities after their own stackers equally. Training source supports random crop locations, but exact run augmentation provenance is not established; spatial calibration can regress. Extra R6 pass has unmeasured hidden runtime.",
+      "sha256": "99b2cdf24f85da159889f23ccef6e625d159698ebcefe2339514cb2275ee8f85",
+      "code_compile": true,
+      "same_33_blend_weights": true,
+      "known_score": null
+    }
+  ]
+}

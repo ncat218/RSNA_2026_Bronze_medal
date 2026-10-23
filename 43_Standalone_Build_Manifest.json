@@ -1,0 +1,22 @@
+{
+  "43A": {
+    "file": "43A_S6_CentreOnly_Standalone_Submit.ipynb",
+    "sha256": "ac17ea865a7d1bf3d5c0a4d9cf08b6c2ed91c28f94b1e363a0c5fddbca36c789",
+    "component_sha256": "daf38743441a026e9c558fe48fbc41262b38635efff7557ea1c9ad431b2c6397",
+    "stage_sha256": "61d6ff0fcb037502fab38a9abaa1e09c2dda2fe189f37b591f24ed76d3d2d7ec",
+    "gpu_hidden_verified": false,
+    "kind": "centre",
+    "no_anchor": true,
+    "strict_no_failed_rows": true
+  },
+  "43B": {
+    "file": "43B_S6_SymmetricCropTTA_Standalone_Submit.ipynb",
+    "sha256": "67519baaea775573af31bbb0ba923d538039ba9d29f2d29d34d899c8af86cf0c",
+    "component_sha256": "99062463e5d142572b2b83b13265e2b6aa88bb6f2c85733b0eb45f8b71e18b81",
+    "stage_sha256": "36157a9ce517a737e74304a5205da47eb60f9cf836873651a7b4bdcefac1e831",
+    "gpu_hidden_verified": false,
+    "kind": "symmetric_two_crop",
+    "no_anchor": true,
+    "strict_no_failed_rows": true
+  }
+}

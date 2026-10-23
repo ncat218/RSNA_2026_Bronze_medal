@@ -1,0 +1,22 @@
+{
+  "44A": {
+    "file": "44A_40B_NoEffusionFluidStacker_Submit.ipynb",
+    "sha256": "7470303a0d335e04880f01537c6cc1e6cfe4f4744423eda862c5b41857773ad9",
+    "disabled_flag": "--fluid-stacker",
+    "target": "Effusion",
+    "modified_anchor_sha256": "ec26dfd0ce7e3ce04f0271a7f6aabe984c57c70067659ee11295d9bf7669ce37",
+    "gpu_verified": false,
+    "reference": "40B",
+    "combined_ablation": false
+  },
+  "44B": {
+    "file": "44B_40B_NoBakerStateStacker_Submit.ipynb",
+    "sha256": "3fc1b9cac01e30244b605db01db4c6925ad662c0ed862a864a3808e422682903",
+    "disabled_flag": "--state-stacker",
+    "target": "Baker's",
+    "modified_anchor_sha256": "8eeb9cddb829b3578b2cfa3c57541d3c5032d725cb2b5ef47b898190523f669b",
+    "gpu_verified": false,
+    "reference": "40B",
+    "combined_ablation": false
+  }
+}

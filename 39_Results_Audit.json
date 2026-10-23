@@ -1,0 +1,19 @@
+{
+  "experiment": "39_output_audit",
+  "status": "VERIFIED_COMPLETE",
+  "zip_sha256": "02d9e60f698f52ccb99f42a88d9d0992f178988eb218999d067e3e30b558ffd0",
+  "user_reported_public_score": 0.958,
+  "user_reported_public_rank_before": 1062,
+  "user_reported_public_rank_after": 404,
+  "public_full_precision_unavailable": true,
+  "saved_output_rows": 3,
+  "saved_run_seconds": 671.27,
+  "saved_run_warnings": [],
+  "s6_vs38_visible_max_abs_delta": 1.1102230246251565e-16,
+  "fusion_recomputed_matches": true,
+  "interpretation": "Saved ZIP contains three visible rows, not hidden Public predictions. Rank movement may reflect unshown score digits, ties or leaderboard updates; no Private generalization conclusion.",
+  "next_probes": {
+    "40A": "80% exact33 + 20% rank(S6); one dose change from39",
+    "40B": "90% exact33 + 10% raw probability(S6); one representation change from39"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "anchor": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 154281
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20297367
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20440357
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20761842
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": true
+  },
+  "anchor_file_sha256": "685e6e0e65c3c5ed29b11c0b584887d894cd07f274de0b9f83370465ab7b4fde",
+  "original_worker_sha256": "8401812cd63737ec99839d317c4037c4efb445d1baec892fa7481bb30399cc2d",
+  "phase0_worker_sha256": "5724caaee13d3ee821f4f463c485d4887cca75f004427936fae2b3259469cfca",
+  "change": "window_rows eval phase 1 -> 0 only; trainer unchanged; extra logs",
+  "training_started": false,
+  "gpu_tested_locally": false
+}

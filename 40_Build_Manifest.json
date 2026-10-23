@@ -1,0 +1,16 @@
+{
+  "40A": {
+    "file": "40A_Anchor0958_Plus_S6_Fixed20_Rank_Submit.ipynb",
+    "sha256": "7f6a43a2429376bef4bbbc5f57716b70dcf61e81a9d5bde3aed9af727fae5e4b",
+    "weight": 0.2,
+    "representation": "rank",
+    "gpu_verified": false
+  },
+  "40B": {
+    "file": "40B_Anchor0958_Plus_S6_Fixed10_Probability_Submit.ipynb",
+    "sha256": "2dfdcffaf532c7317f45ba095705e24c35f83ad014d3e0032c5686405509e543",
+    "weight": 0.1,
+    "representation": "probability",
+    "gpu_verified": false
+  }
+}

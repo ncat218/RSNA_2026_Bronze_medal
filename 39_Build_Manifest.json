@@ -1,0 +1,8 @@
+{
+  "anchor_source_sha256": "685e6e0e65c3c5ed29b11c0b584887d894cd07f274de0b9f83370465ab7b4fde",
+  "anchor_adapter_sha256": "0993187ed79de621f21407272b63e6f2b7491baec968709e9b7ac30db55f3969",
+  "s6_component_sha256": "daf38743441a026e9c558fe48fbc41262b38635efff7557ea1c9ad431b2c6397",
+  "notebook_sha256": "f8a1a10fdf3911398167e63c1cd90e65551c029f9643c242d1fd7df5ad5dc3d3",
+  "fusion": "0.9*unchanged33 + 0.1*rank(S6)",
+  "gpu_submission_verified": false
+}
