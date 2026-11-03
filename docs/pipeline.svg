@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="370" viewBox="0 0 1100 370" role="img" aria-labelledby="title desc">
+<title id="title">Notebook 40B inference pipeline</title><desc id="desc">MRI studies feed the R6 and Raptor anchor and S6 branches. The final prediction is 90 percent anchor and 10 percent raw S6 probability, followed by validation and CSV export.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#526278"/></marker></defs>
+<rect width="1100" height="370" rx="16" fill="#f6f8fa"/>
+<g fill="none" stroke="#526278" stroke-width="2" marker-end="url(#arrow)"><path d="M187 185 H220 V98 H260"/><path d="M220 185 V267 H260"/><path d="M540 98 H595 V185 H635"/><path d="M540 267 H595 V185"/><path d="M845 185 H885"/></g>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<rect x="25" y="139" width="162" height="92" rx="12" fill="#fff" stroke="#a6b3c2"/>
+<text x="106" y="179" font-size="19" font-weight="bold" fill="#172b4d">Knee MRI</text><text x="106" y="205" font-size="16" fill="#526278">Study / series</text>
+<rect x="260" y="35" width="280" height="126" rx="12" fill="#e9f2ff" stroke="#6d9bd5"/>
+<text x="400" y="71" font-size="19" font-weight="bold" fill="#172b4d">R6 / Raptor anchor</text><text x="400" y="100" font-size="16" fill="#344563">Raptor 384 + Raptor 224 + R6</text><text x="400" y="128" font-size="16" fill="#344563">Preserved per-target rank blend</text>
+<rect x="260" y="208" width="280" height="118" rx="12" fill="#e8f4ef" stroke="#70a58b"/>
+<text x="400" y="246" font-size="19" font-weight="bold" fill="#172b4d">S6 branch</text><text x="400" y="275" font-size="16" fill="#344563">ConvNeXt-Small</text><text x="400" y="302" font-size="16" fill="#344563">Raw finding probabilities</text>
+<rect x="635" y="121" width="210" height="128" rx="12" fill="#fff2dd" stroke="#c99b51"/>
+<text x="740" y="158" font-size="19" font-weight="bold" fill="#172b4d">Final fusion</text><text x="740" y="188" font-size="17" fill="#344563">90% anchor</text><text x="740" y="216" font-size="17" fill="#344563">+ 10% S6 probability</text>
+<rect x="885" y="129" width="190" height="112" rx="12" fill="#fff" stroke="#a6b3c2"/>
+<text x="980" y="165" font-size="18" font-weight="bold" fill="#172b4d">Validate and export</text><text x="980" y="192" font-size="15" fill="#526278">Study IDs / 12 findings</text><text x="980" y="218" font-size="16" fill="#172b4d">submission.csv</text>
+<text x="550" y="354" font-size="14" fill="#526278">Logical model contributions · Execution order: S6, then anchor, then fusion</text>
+</g></svg>
