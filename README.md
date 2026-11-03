@@ -1,59 +1,64 @@
-# RSNA 2026 — Bronze Medal
+# RSNA Knee Abnormality Detection — Bronze Medal
 
-Competition notebooks, experiment code, and research notes for [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection).
+**459 / 6,300 teams · Top 7.29% · Kaggle 2026**  
+Nguyen Chau Anh Tuan
 
-## Competition result
+A solution writeup and reproducible submission entry point built around **notebook 40B**, identified by the author as the submission behind the final placement.
 
-| | Result |
-|---|---|
-| Competitor | Nguyen Chau Anh Tuan |
-| Award | **Bronze Medal** |
-| Final placement | **459 / 6,300 teams** (top 7.29%) |
-| Award date | October 23, 2026 |
+**[Read the solution](docs/solution.md) · [Run the notebook](docs/reproduction.md) · [Experiment notes](docs/experiments.md)**
 
-The placement and award above are documented in the Kaggle certificate below.
+## Approach
 
-![Kaggle Bronze Medal certificate — Nguyen Chau Anh Tuan, 459th of 6,300 teams](docs/bronze-medal-certificate.png)
+The solution combines an R6/Raptor anchor with an S6 branch for 12 knee MRI findings. The final fusion retains 90% of the anchor output and adds 10% of the raw S6 probabilities.
 
-## Project overview
-
-This archive follows the development of knee MRI abnormality detection pipelines: data and label audits, slice and series selection, multiple instance learning (MIL), pretrained image encoders, and ensemble inference. It preserves both successful runs and exploratory experiments.
-
-The experiments include DenseSlice MIL, RadImageNet encoders, CoAtNet and ConvNeXt branches, and later R6/Raptor inference pipelines with an S6 component. Later probes examine slice density, anatomical mirroring, crop augmentation, rank blending, probability blending, and per-target postprocessing.
-
-## Start here
-
-| Files | Purpose |
-|---|---|
-| [Final assessment and selection notes](45_Final_Assessment_and_Selection.md) | Recorded evidence, candidate comparisons, and validation limitations |
-| [Notebook 33 notes](33_RSNA_0958_R6_Raptor_Notes.md) | R6/Raptor anchor provenance and input requirements |
-| [Notebook 39 run instructions](39_Run_Instructions.md) | Kaggle setup and the fixed S6 rank blend |
-| `33_*`, `39_*`, `40B_*` notebooks | Later submission candidates preserved in the archive |
-| `45A_*`–`45E_*` notebooks | Final fusion experiments; their presence does not identify the medal submission |
-| `build_*.py`, `validate_*.py`, `test_*.py` | Notebook builders and implementation checks |
-| `results*.zip`, `*_Artifacts.zip`, `research_*` | Saved outputs, checkpoints, source snapshots, and supporting evidence |
-
-The historical notes report a rounded public leaderboard score of 0.958 for several later candidates. That public score is separate from the final placement shown in the certificate. This archive does not establish which exact selected notebook produced the final ranking or record a verified private leaderboard score.
-
-## Restore the archive
-
-Install Git and [Git LFS](https://git-lfs.com/), then run:
-
-```bash
-git lfs install
-git clone https://github.com/ncat218/RSNA_2026_Bronze_medal.git
-cd RSNA_2026_Bronze_medal
-git lfs pull
+```mermaid
+flowchart LR
+    A[Knee MRI studies] --> B[R6 + Raptor 384/224 anchor]
+    A --> C[S6 inference]
+    B --> D[Existing per-target rank blend]
+    D --> E[90% anchor + 10% S6 probability]
+    C --> E
+    E --> F[UID and output checks]
+    F --> G[submission.csv]
 ```
 
-ZIP archives and `.pt` checkpoints use Git LFS. A clone without the LFS objects contains pointer files in their place. Python bytecode caches and incomplete `.download` files are excluded.
+The work presented here focuses on integrating community models, comparing fusion choices, preserving checkpoint provenance, and making the inference run auditable. Model sources and pretrained weights are credited in the [solution](docs/solution.md#credits-and-scope).
 
-## Running the notebooks
+## Result
 
-The submission notebooks target Kaggle. Check each notebook's metadata and accompanying run instructions for its exact competition inputs, external datasets, checkpoint versions, and GPU settings. For example, the notebook 39 instructions specify T4 ×2 GPUs, Internet off, and pinned input versions.
+| Measure | Result / evidence |
+|---|---|
+| Final placement | **459 / 6,300 teams**, Bronze Medal |
+| Final submission | **40B**, as confirmed by the author |
+| Historical Public LB | **0.958**, rounded score reported during the competition |
+| Private LB score | Not recorded here; final placement is supported by the certificate |
 
-This repository is an experiment archive, not a self-contained training dataset. Reproducing a run requires obtaining its referenced Kaggle inputs and observing the access conditions for those sources. Local syntax, hash, and fusion checks do not replace a complete Kaggle GPU run.
+<details>
+<summary>Kaggle achievement certificate — October 23, 2026</summary>
 
-## Credits
+![Bronze medal certificate](docs/bronze-medal-certificate.png)
 
-The research builds on community notebooks, model weights, and datasets referenced in the notebook metadata and provenance notes, including Raptor, R6/OrthoFoundation, S6, RadImageNet, CoAtNet, and ConvNeXt resources. Those third-party assets retain their original licenses and usage conditions. See the individual notebooks and research notes for source attribution.
+</details>
+
+## Repository guide
+
+| Path | Contents |
+|---|---|
+| [docs/solution.md](docs/solution.md) | Pipeline, fusion rationale, reliability and limitations |
+| [docs/experiments.md](docs/experiments.md) | Selected experiments and what the evidence supports |
+| [docs/reproduction.md](docs/reproduction.md) | Kaggle inputs, execution steps and output checks |
+| [notebooks/final_submission_40B.ipynb](notebooks/final_submission_40B.ipynb) | Original archived 40B notebook, without code edits |
+| [src/fusion.py](src/fusion.py) | Final fusion function extracted verbatim for inspection and testing |
+| [configs/submission.json](configs/submission.json) | Notebook checksum, fusion weights and original Kaggle metadata |
+| [tests/test_fusion.py](tests/test_fusion.py) | Lightweight checks of identity alignment, fallback and invalid inputs |
+
+Full GPU inference runs through the notebook. The extracted fusion module is independently testable:
+
+```bash
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+```
+
+The complete competition history, older notebooks, ZIP outputs and checkpoints remain on the [`archive/competition-snapshot-2026-11-03`](https://github.com/ncat218/RSNA_2026_Bronze_medal/tree/archive/competition-snapshot-2026-11-03) branch. The main branch is a focused presentation of the final solution.
+
+Competition: [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection).

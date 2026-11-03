@@ -1,0 +1,36 @@
+{
+  "notebook": "notebooks/final_submission_40B.ipynb",
+  "sha256": "160aeee64f1748ea17b6a3e07cefb171a37504d604d09c64de2bff269872efee",
+  "anchor_weight": 0.9,
+  "s6_weight": 0.1,
+  "s6_representation": "raw probability",
+  "kaggle_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 154281
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20297367
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20440357
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20761842
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20844630
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": true
+  }
+}
